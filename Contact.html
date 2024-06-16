@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Allowing All Device Accessability -->
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Connected Style Sheet -->
 	<script src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation Menu -->
+    <!-- Top Menu -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -17,29 +17,29 @@
 			<li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
-	<hr>
+	<hr> <!-- Asthetic Lines -->
 
-    <!-- Main Content -->
+    <!-- Main Text -->
     <main>
         <section class="contact">
             <h2>Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <form id="contactForm"> <!-- Creating Form -->
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" required> <!-- Setting Input to Text Type For Easier Form Validation -->
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required> <!-- Setting Input to Email Type For Easier Form Validation -->
                 
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required></textarea> <!-- Setting Input to Message Type For Easier Form Validation -->
                 
-                <button type="submit" onclick="validateInput()">Submit</button>
+                <button type="submit" onclick="validateInput()">Submit</button> <!-- Call JavaScript Function -->
 
             </form>
-			<hr>
+			<hr> <!-- Asthetic Lines -->
         </section>
     </main>
 </body>
