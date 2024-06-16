@@ -1,6 +1,7 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Ariel, sans-serif;
+	font-size: 20px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +10,6 @@ body {
 /* Navigation Menu */
 nav {
     background-color: black;
-    color: white;
     padding: 20px;
 }
 
@@ -30,37 +30,74 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: pink;
+	color: goldenrod;
 	text-decoration: underline;
     text-decoration-style: wavy;
 }
 
 /* Header Section */
 header {
-    background-color: whitesmoke;
+    background-color: #FFF28C;
     text-align: center;
     padding: 50px 20px;
+
+}
+
+.welcome {
+	font-size: 50px;
+	text-shadow: 5px 5px 5px goldenrod;
 }
 
 header h1 {
     margin: 0;
 }
 
+hr {
+	height: 5px;
+	margin: 0;
+	background-color: goldenrod;
+}
+
 /* Main Content */
+.image-container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.scrappy {
+    border: 10px solid goldenrod;
+	max-width: 250px;
+	border-radius: 50%;
+}
+
+.decorative {
+	max-width: 350px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
 main { 
     text-align: center;
 	padding: 20px;
 }
 
 .about {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+
+.about p {
+	margin-bottom: 50px;
 }
 
 .about img {
-    max-width: 150px;
+    border: 10px solid goldenrod;
+	max-width: 350px;
     margin-right: 20px;
+	border-radius: 8px;
 }
 
 .contact form {
@@ -74,7 +111,6 @@ main {
 }
 
 .contact form input, .contact form textarea {
-	border-style: double;
     margin-top: 10px;
     padding: 10px;
     font-size: 20px;
@@ -83,4 +119,5 @@ main {
 }
 .contact button {
 	margin-top: 10px;
+	margin-bottom: 50px;
 }
